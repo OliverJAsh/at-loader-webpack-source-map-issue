@@ -1,0 +1,13 @@
+{
+  "name": "webpack-source-map-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-core": "^6.26.0",
+    "sourcemap-validator": "^1.0.5",
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0"
+  }
+}
