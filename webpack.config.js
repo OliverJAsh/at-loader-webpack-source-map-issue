@@ -10,15 +10,20 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                    },
+                ],
+            },
+            {
                 test: /\.(js|tsx?)$/,
                 exclude: /node_modules/,
                 use: [
                     {
                         loader: 'awesome-typescript-loader',
-                        options: {
-                            // Enabling this will result in invalid source maps
-                            useBabel: process.env.USE_BABEL === 'true',
-                        },
                     },
                 ],
             },
